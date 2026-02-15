@@ -3,125 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legendary Staffing | Las Vegas Event Professionals</title>
+    <title>Legendary Staffing | Las Vegas Premier Event Talent</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <nav>
-            <a href="#" class="logo">LEGENDARY STAFFING</a>
+            <a href="#home" class="logo">LEGENDARY STAFFING</a>
             <ul>
-                <li><a href="#request">Request Staff</a></li>
-                <li><a href="#apply-section">Join Team</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#request">Hire Us</a></li>
+                <li><a href="#apply">Join Team</a></li>
+                <li><a href="#gallery">Gallery</a></li>
             </ul>
         </nav>
     </header>
 
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>LEGENDARY SERVICE</h1>
+            <p>Elevating the Las Vegas Convention Experience</p>
+            <div class="hero-actions">
+                <a href="#request" class="btn-gold">Request Staffing</a>
+                <a href="#apply" class="btn-outline">Join the Roster</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="module-section" style="background-color: var(--dark-bg);">
+        <div class="section-title">
+            <h2>Our Professionals</h2>
+            <p>Experience the standard of front-of-house excellence</p>
+        </div>
+        <div class="image-grid">
+            <img src="https://via.placeholder.com/400x300/2a2a2a/c5a059?text=Brand+Ambassadors" alt="Talent 1">
+            <img src="https://via.placeholder.com/400x300/2a2a2a/c5a059?text=Convention+Staff" alt="Talent 2">
+            <img src="https://via.placeholder.com/400x300/2a2a2a/c5a059?text=VIP+Greeters" alt="Talent 3">
+        </div>
+    </section>
+
     <section id="request" class="module-section">
         <div class="card">
             <div class="section-title">
-                <h2>Request Legendary Talent</h2>
-                <p style="font-size: 0.9rem; color: #888;">Secure professional front-of-house staff for your next engagement</p>
+                <h2>Request Services</h2>
+                <p>Secure staffing for your next Las Vegas engagement</p>
             </div>
-
             <form action="YOUR_BACKEND_URL" method="POST">
                 <div class="grid">
-                    <div class="field-box">
-                        <label>Event Name</label>
-                        <input type="text" name="event_name" required>
-                    </div>
-                    <div class="field-box">
-                        <label>Venue</label>
-                        <input type="text" name="venue" placeholder="e.g. Venetian Expo, LVCC">
-                    </div>
+                    <div class="field-box"><label>Event Name</label><input type="text" name="Event" required></div>
+                    <div class="field-box"><label>Venue</label><input type="text" name="Venue" placeholder="e.g. Venetian, LVCC"></div>
                 </div>
-
                 <div class="grid">
-                    <div class="field-box">
-                        <label>Type of Staff Requested</label>
-                        <input type="text" name="staff_type" placeholder="e.g. Brand Ambassadors">
-                    </div>
-                    <div class="field-box">
-                        <label>Amount of Staff</label>
-                        <input type="number" name="staff_qty" min="1">
-                    </div>
+                    <div class="field-box"><label>Staff Type</label><input type="text" name="Type" placeholder="e.g. Brand Ambassadors"></div>
+                    <div class="field-box"><label>Quantity</label><input type="number" name="Qty"></div>
                 </div>
-
                 <div class="grid">
-                    <div class="field-box">
-                        <label>Dates</label>
-                        <input type="text" name="dates" placeholder="MM/DD - MM/DD">
-                    </div>
-                    <div class="field-box">
-                        <label>Times</label>
-                        <input type="text" name="times" placeholder="e.g. 8:00 AM - 5:00 PM">
-                    </div>
+                    <div class="field-box"><label>Dates</label><input type="text" name="Dates" placeholder="MM/DD - MM/DD"></div>
+                    <div class="field-box"><label>Times</label><input type="text" name="Times" placeholder="e.g. 8am - 5pm"></div>
                 </div>
-
-                <div class="field-box">
-                    <label>Additional Request Items</label>
-                    <textarea name="notes" rows="4" placeholder="Uniform requirements, specific languages, etc."></textarea>
-                </div>
-
+                <div class="field-box"><label>Additional Details</label><textarea name="Details" rows="3"></textarea></div>
                 <button type="submit" class="submit-btn">Request Quote</button>
             </form>
         </div>
     </section>
 
-    <section id="apply-section" class="module-section">
+    <section id="apply" class="module-section" style="background-color: var(--dark-bg);">
         <div class="card">
             <div class="section-title">
-                <h2>Submit Your Talent Profile</h2>
-                <p style="font-size: 0.9rem; color: #888;">Complete your talent profile below</p>
-            </div>
-
-            <form action="YOUR_BACKEND_URL" method="POST" enctype="multipart/form-data">
-                <div class="grid">
-                    <div class="field-box">
-                        <label>Full Name</label>
-                        <input type="text" name="talent_name" required>
-                    </div>
-                    <div class="field-box">
-                        <label>Phone Number</label>
-                        <input type="tel" name="talent_phone" required>
-                    </div>
-                </div>
-
-                <div class="field-box">
-                    <label>Email Address</label>
-                    <input type="email" name="talent_email" required>
-                </div>
-
-                <div class="field-box">
-                    <label>Quick Bio</label>
-                    <textarea name="talent_bio" rows="2" placeholder="Tell us about you..."></textarea>
-                </div>
-
-                <div class="field-box">
-                    <label>Experience (Professional & Gig Work)</label>
-                    <textarea name="talent_exp" rows="4" placeholder="List your professional, convention, or event experience..."></textarea>
-                </div>
-
-                <div class="grid">
-                    <div class="field-box">
-                        <label>Upload a Headshot</label>
-                        <input type="file" name="headshot" accept="image/*">
-                    </div>
-                    <div class="field-box">
-                        <label>Schedule Limitations (if any)</label>
-                        <input type="text" name="talent_schedule" placeholder="e.g. Weekends only">
-                    </div>
-                </div>
-
-                <button type="submit" class="submit-btn">Send Application</button>
-            </form>
-        </div>
-    </section>
-
-    <footer style="text-align: center; padding: 40px; color: #666; font-size: 0.8rem;">
-        &copy; 2026 Legendary Staffing Las Vegas
-    </footer>
-
-</body>
-</html>
+                <h2>Talent Application</h2>
+                <p>Submit your profile to join our
