@@ -33,30 +33,76 @@
         </nav>
     </header>
 
-    <div class="card">
-        <h2 style="color:#c5a059; text-align:center; text-transform: uppercase;">Request Services</h2>
-        <form action="https://forms.gle/GeHKkXfKgaMaQyim7" method="POST" target="_hidden_iframe">
-            <div class="field-box"><label>Company Name</label><input type="text" required></div>
-            <div class="field-box"><label>Contact Name</label><input type="text" required></div>
-            <div class="field-box"><label>Phone Number</label><input type="text" required></div>
-            <div class="field-box"><label>Email Address</label><input type="text" required></div>
-            <div class="field-box"><label>Event Name</label><input type="text" required></div>
-            <div class="field-box"><label>Venue</label><input type="text" placeholder="e.g. Venetian, LVCC, Mandalay Bay Convention Center.."></div>
-            <div style="display:flex; gap:15px;">
-                <div class="field-box" style="flex:1;"><label>Staff Requested</label><input type="text" placeholder="Brand Ambassador, Lead Generator, Event Staff, etc..."></div>
-                <div class="field-box" style="flex:1;"><label>Quantity</label><input type="number"></div>
+<div class="card">
+    <h2 style="color:#c5a059; text-align:center; text-transform: uppercase;">Request Services</h2>
+    
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdXngH9cwxBoi5IXBEuApoXloEmChP270sVKjDExZqnw2Ptpw/viewform?usp=sharing&ouid=115772961432445183514" method="POST" target="_hidden_iframe" onsubmit="alert('Your request has been sent to Legendary Staffing!');">
+        
+        <div class="field-box">
+            <label>Company Name</label>
+            <input type="text" name="entry.1545316894" required>
+        </div>
+
+        <div class="field-box">
+            <label>Contact Name</label>
+            <input type="text" name="entry.368002073" required>
+        </div>
+
+        <div class="field-box">
+            <label>Phone Number</label>
+            <input type="text" name="entry.685056837" required>
+        </div>
+
+        <div class="field-box">
+            <label>Email Address</label>
+            <input type="email" name="entry.174158609" required>
+        </div>
+
+        <div class="field-box">
+            <label>Event Name</label>
+            <input type="text" name="entry.158047313" required>
+        </div>
+
+        <div class="field-box">
+            <label>Venue</label>
+            <input type="text" name="entry.1984757637" placeholder="e.g. Venetian, LVCC, Mandalay Bay Convention Center..">
+        </div>
+
+        <div style="display:flex; gap:15px;">
+            <div class="field-box" style="flex:1;">
+                <label>Staff Requested</label>
+                <input type="text" name="entry.605246807" placeholder="Brand Ambassador, etc...">
             </div>
-            <div style="display:flex; gap:15px;">
-                <div class="field-box" style="flex:1;"><label>Dates</label><input type="text"></div>
-                <div class="field-box" style="flex:1;"><label>Times</label><input type="text"></div>
+            <div class="field-box" style="flex:1;">
+                <label>Quantity</label>
+                <input type="number" name="entry.2108030093">
             </div>
-            <div class="field-box"><label>Additional Notes or Requests</label><textarea rows="6"></textarea></div>
-            <button class="submit-btn">Request Quote</button>
-        </form>
-        <iframe name="_hidden_iframe" id="_hidden_iframe" style="display:none;"></iframe>
-    </div>
+        </div>
+
+        <div style="display:flex; gap:15px;">
+            <div class="field-box" style="flex:1;">
+                <label>Dates</label>
+                <input type="text" name="entry.1032244752">
+            </div>
+            <div class="field-box" style="flex:1;">
+                <label>Times</label>
+                <input type="text" name="entry.990350753">
+            </div>
+        </div>
+
+        <div class="field-box">
+            <label>Additional Notes or Requests</label>
+            <textarea name="entry.1056788619" rows="6"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Request Quote</button>
+    </form>
+
+    <iframe name="_hidden_iframe" id="_hidden_iframe" style="display:none;"></iframe>
+</div>
 </body>
 </html>
+
 
 
 
