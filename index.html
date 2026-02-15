@@ -48,6 +48,20 @@
     </header>
 
     <section class="hero">
+        .hero { 
+            height: 80vh; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            text-align: center; 
+            /* This line adds the semi-transparent overlay (0.7 is 70% black) */
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('images/background.png'); 
+            background-size: cover; 
+            background-position: center;
+            background-attachment: fixed; /* This creates a high-end parallax effect */
+        }
         <h1>LEGENDARY <span style="color: #c5a059;">STAFFING</span></h1>
         <p>Expert Hospitality Solutions for the World's Biggest Stages</p>
         <a href="https://legendarystaffingllc.github.io/legendary-staffing/request.html" class="btn-gold">Request a Quote</a>
@@ -111,6 +125,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
