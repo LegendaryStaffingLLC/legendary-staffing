@@ -47,25 +47,30 @@
         </nav>
     </header>
 
-    <section class="hero">
-        .hero { 
-            height: 80vh; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: center; 
-            align-items: center; 
-            text-align: center; 
-            /* This line adds the semi-transparent overlay (0.7 is 70% black) */
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                        url('images/background.png'); 
-            background-size: cover; 
-            background-position: center;
-            background-attachment: fixed; /* This creates a high-end parallax effect */
-        }
-        <h1>LEGENDARY <span style="color: #c5a059;">STAFFING</span></h1>
-        <p>Expert Hospitality Solutions for the World's Biggest Stages</p>
-        <a href="https://legendarystaffingllc.github.io/legendary-staffing/request.html" class="btn-gold">Request a Quote</a>
-    </section>
+<section id="home" 
+    style="height: 80vh; 
+           display: flex; 
+           flex-direction: column; 
+           justify-content: center; 
+           align-items: center; 
+           text-align: center; 
+           background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/background.png'); 
+           background-size: cover; 
+           background-position: center; 
+           background-attachment: fixed;">
+           
+    <div style="max-width: 800px; padding: 20px;">
+        <h1 style="font-size: 4rem; letter-spacing: 10px; margin-bottom: 20px; text-transform: uppercase;">
+            LEGENDARY <span style="color: #c5a059;">STAFFING</span>
+        </h1>
+        <p style="font-size: 1.2rem; letter-spacing: 2px; color: #f4f4f4;">
+            Expert Hospitality Solutions for the World's Biggest Stages
+        </p>
+        <div style="margin-top: 30px;">
+            <a href="request.html" class="btn-gold">Request a Quote</a>
+        </div>
+    </div>
+</section>
 
     <div id="expertise" class="container">
         <div class="section-title">
@@ -125,6 +130,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
