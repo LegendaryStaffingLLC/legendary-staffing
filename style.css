@@ -1,1 +1,117 @@
+<section id="request-services" style="padding: 100px 5%; background-color: var(--accent-gray);">
+    <div class="application-card">
+        <div class="section-title">
+            <h2 style="color: var(--gold); text-transform: uppercase; letter-spacing: 3px; text-align: center;">Book Legendary Talent</h2>
+            <p style="font-size: 0.9rem; color: #888; text-align: center;">Partner with Las Vegas' premier event professionals</p>
+        </div>
 
+        <form>
+            <div class="grid">
+                <div class="field-box">
+                    <label>Event Name</label>
+                    <input type="text" placeholder="e.g. CES 2026, SEMA, World of Concrete" required>
+                </div>
+                <div class="field-box">
+                    <label>Venue</label>
+                    <input type="text" placeholder="e.g. Venetian Expo, LVCC, Mandalay Bay">
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="field-box">
+                    <label>Type of Staff Requested</label>
+                    <input type="text" placeholder="e.g. Brand Ambassadors, VIP Greeters">
+                </div>
+                <div class="field-box">
+                    <label>Amount of Staff Requested</label>
+                    <input type="number" placeholder="Total staff per day" min="1">
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="field-box">
+                    <label>Dates</label>
+                    <input type="text" placeholder="MM/DD/YY - MM/DD/YY" required>
+                </div>
+                <div class="field-box">
+                    <label>Times</label>
+                    <input type="text" placeholder="e.g. 8:00 AM - 5:00 PM">
+                </div>
+            </div>
+
+            <div class="field-box">
+                <label>Uniform Requirements</label>
+                <input type="text" placeholder="e.g. Black suit, business professional, branded polo">
+            </div>
+
+            <div class="field-box">
+                <label>Additional Request Details</label>
+                <textarea rows="4" placeholder="Specific languages needed, lead generation goals, or special instructions..."></textarea>
+            </div>
+
+            <div class="grid">
+                <div class="field-box">
+                    <label>Company / Agency Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="field-box">
+                    <label>Best Contact Email</label>
+                    <input type="email" required>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Request Quote & Staffing</button>
+        </form>
+    </div>
+</section>
+
+<section id="apply" style="padding: 100px 5%; background-color: var(--dark-bg);">
+    <div style="max-width: 850px; margin: auto; background: #111; padding: 50px; border: 1px solid #3d3d3d; position: relative;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: var(--gold);"></div>
+        
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h2 style="font-size: 2rem; text-transform: uppercase; letter-spacing: 4px; margin-bottom: 10px; color: #fff;">Join the Roster</h2>
+            <p style="color: var(--gold); font-style: italic; font-size: 0.9rem;">Submit your details for premier Las Vegas convention & event placement.</p>
+        </div>
+
+        <form action="YOUR_BACKEND_URL" method="POST" enctype="multipart/form-data">
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 25px;">
+                <div class="form-group">
+                    <label style="display: block; font-size: 0.75rem; text-transform: uppercase; color: var(--gold); margin-bottom: 8px;">Full Name</label>
+                    <input type="text" name="name" required style="width: 100%; padding: 14px; background: #262626; border: 1px solid #3d3d3d; color: white;">
+                </div>
+                <div class="form-group">
+                    <label style="display: block; font-size: 0.75rem; text-transform: uppercase; color: var(--gold); margin-bottom: 8px;">Email Address</label>
+                    <input type="email" name="email" required style="width: 100%; padding: 14px; background: #262626; border: 1px solid #3d3d3d; color: white;">
+                </div>
+            </div>
+
+            <div style="margin-bottom: 25px;">
+                <label style="display: block; font-size: 0.75rem; text-transform: uppercase; color: var(--gold); margin-bottom: 8px;">Quick Bio</label>
+                <textarea name="bio" rows="3" placeholder="A brief introduction of your professional personality..." style="width: 100%; padding: 14px; background: #262626; border: 1px solid #3d3d3d; color: white; resize: vertical; font-family: inherit;"></textarea>
+            </div>
+
+            <div style="margin-bottom: 25px;">
+                <label style="display: block; font-size: 0.75rem; text-transform: uppercase; color: var(--gold); margin-bottom: 8px;">Experience (Professional & Gig Work)</label>
+                <textarea name="experience" rows="5" placeholder="List notable conventions, brand ambassador roles, or relevant hospitality experience..." style="width: 100%; padding: 14px; background: #262626; border: 1px solid #3d3d3d; color: white; resize: vertical; font-family: inherit;"></textarea>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px;">
+                <div class="form-group">
+                    <label style="display: block; font-size: 0.75rem; text-transform: uppercase; color: var(--gold); margin-bottom: 8px;">Upload a Headshot</label>
+                    <input type="file" name="headshot" accept="image/*" style="width: 100%; padding: 10px; background: #262626; border: 1px solid #3d3d3d; color: #888;">
+                    <small style="color: #666; font-size: 0.7rem; display: block; margin-top: 5px;">High-resolution professional photos preferred.</small>
+                </div>
+                <div class="form-group">
+                    <label style="display: block; font-size: 0.75rem; text-transform: uppercase; color: var(--gold); margin-bottom: 8px;">Schedule Limitations (if any)</label>
+                    <input type="text" name="limitations" placeholder="e.g., No weekends, available after 4pm" style="width: 100%; padding: 14px; background: #262626; border: 1px solid #3d3d3d; color: white;">
+                </div>
+            </div>
+
+            <button type="submit" style="width: 100%; padding: 18px; background: var(--gold); color: black; border: none; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; transition: 0.3s;">
+                Submit Professional Application
+            </button>
+        </form>
+    </div>
+</section>
