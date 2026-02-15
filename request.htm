@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Services | Legendary Staffing</title>
+    <style>
+        body { margin: 0; background-color: #333333; color: #f4f4f4; font-family: 'Segoe UI', Arial, sans-serif; padding-top: 100px; }
+        header { position: fixed; top: 0; width: 100%; background: #1a1a1a; border-bottom: 1px solid #c5a059; padding: 15px 0; }
+        nav { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0 5%; }
+        .logo { font-weight: bold; color: #c5a059; text-decoration: none; letter-spacing: 2px; }
+        nav ul { list-style: none; display: flex; margin: 0; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { color: white; text-decoration: none; text-transform: uppercase; font-size: 0.8rem; }
+        .card { max-width: 800px; margin: 40px auto; background: #1a1a1a; padding: 40px; border: 1px solid #c5a059; }
+        .field-box { background: #2a2a2a; padding: 15px; border: 1px solid #444; margin-bottom: 15px; }
+        label { color: #c5a059; font-size: 0.7rem; text-transform: uppercase; display: block; margin-bottom: 5px; }
+        input, textarea { width: 100%; background: transparent; border: none; border-bottom: 1px solid #555; color: white; padding: 8px 0; outline: none; }
+        .submit-btn { width: 100%; padding: 15px; background: #c5a059; color: black; border: none; font-weight: bold; cursor: pointer; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">LEGENDARY STAFFING</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="request.html">Hire Us</a></li>
+                <li><a href="apply.html">Join Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="card">
+        <h2 style="color:#c5a059; text-align:center; text-transform: uppercase;">Request Services</h2>
+        <form>
+            <div class="field-box"><label>Event Name</label><input type="text" required></div>
+            <div class="field-box"><label>Venue</label><input type="text" placeholder="e.g. Venetian, LVCC"></div>
+            <div style="display:flex; gap:15px;">
+                <div class="field-box" style="flex:1;"><label>Staff Requested</label><input type="text"></div>
+                <div class="field-box" style="flex:1;"><label>Quantity</label><input type="number"></div>
+            </div>
+            <div style="display:flex; gap:15px;">
+                <div class="field-box" style="flex:1;"><label>Dates</label><input type="text"></div>
+                <div class="field-box" style="flex:1;"><label>Times</label><input type="text"></div>
+            </div>
+            <div class="field-box"><label>Additional Items</label><textarea rows="3"></textarea></div>
+            <button class="submit-btn">Request Quote</button>
+        </form>
+    </div>
+</body>
+</html>

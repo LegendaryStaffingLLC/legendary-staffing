@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legendary Staffing | Apply</title>
+    <style>
+        :root {
+            --gold: #c5a059;
+            --dark-bg: #1a1a1a; /* Original dark background */
+            --accent-gray: #333333; /* Original gray from previous module */
+            --input-bg: #2a2a2a;
+            --text-white: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background-color: var(--dark-bg);
+            color: var(--text-white);
+        }
+
+        /* Fixed Navigation Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(26, 26, 26, 0.98);
+            border-bottom: 1px solid var(--gold);
+            z-index: 1000;
+            padding: 15px 0;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5%;
+        }
+
+        .logo { font-weight: bold; letter-spacing: 3px; color: var(--gold); text-decoration: none; }
+        nav ul { list-style: none; display: flex; margin: 0; }
+        nav ul li { margin-left: 25px; }
+        nav ul li a { color: white; text-decoration: none; text-transform: uppercase; font-size: 0.8rem; }
+
+        /* Application Module Wrapper */
+        #apply-section {
+            padding: 120px 5% 60px;
+            background-color: var(--accent-gray); /* Reverted to the original gray background */
+        }
+
+        .application-card {
+            max-width: 850px;
+            margin: auto;
+            background: var(--dark-bg);
+            padding: 45px;
+            border: 1px solid var(--gold);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+            color: var(--gold);
+        }
+
+        /* Separation & Layout */
+        .field-box {
+            background: var(--input-bg);
+            padding: 20px;
+            border: 1px solid #444;
+            margin-bottom: 20px; /* Separation between boxes */
+            transition: border-color 0.3s;
+        }
+
+        .field-box:focus-within {
+            border-color: var(--gold);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--gold);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        input, textarea {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #555;
+            color: white;
+            padding: 10px 0;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        input[type="file"] {
+            border-bottom: none;
+            color: #888;
+            font-size: 0.8rem;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 20px;
+            background: var(--gold);
+            color: black;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover { background: #b08d4a; }
+
+        @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="logo">LEGENDARY STAFFING</a>
+            <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#request">Request</a></li>
+            <li><a href="#talent">Talent</a></li>
+            <li><a href="#">Apply Now</a></li>
+            <li><a href="#admin-panel">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="apply-section">
+        <div class="application-card">
+            <div class="section-title">
+                <h2>Submit Your Talent Profile</h2>
+                <p style="font-size: 0.9rem; color: #888;">Complete your talent profile below</p>
+            </div>
+
+            <form>
+                <div class="grid">
+                    <div class="field-box">
+                        <label>Full Name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="field-box">
+                        <label>Phone Number</label>
+                        <input type="tel" required>
+                    </div>
+                </div>
+
+                <div class="field-box">
+                    <label>Email Address</label>
+                    <input type="email" required>
+                </div>
+
+                <div class="field-box">
+                    <label>Quick Bio</label>
+                    <textarea rows="2" placeholder="Tell us about you..."></textarea>
+                </div>
+
+                <div class="field-box">
+                    <label>Experience (Professional & Gig Work)</label>
+                    <textarea rows="4" placeholder="List your professional, convention, brand ambassador, or event staff experience..."></textarea>
+                </div>
+
+                <div class="grid">
+                    <div class="field-box">
+                        <label>Upload a Headshot</label>
+                        <input type="file" accept="image/*">
+                    </div>
+                    <div class="field-box">
+                        <label>Schedule Limitations (if any)</label>
+                        <input type="text" placeholder="e.g. Weekends only">
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Application</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
