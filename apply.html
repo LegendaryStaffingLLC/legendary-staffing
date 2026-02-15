@@ -22,68 +22,30 @@
 <body>
     <header>
         <nav>
-            <a href="#" class="logo">LEGENDARY STAFFING</a>
+            <a href="index.html" class="logo">LEGENDARY STAFFING</a>
             <ul>
-            <li><a href="https://legendarystaffingllc.github.io/legendary-staffing/index.html">Home</a></li>
-            <li><a href="https://legendarystaffingllc.github.io/legendary-staffing/request.html">Request</a></li>
-            <li><a href="https://legendarystaffingllc.github.io/legendary-staffing/apply.html">Apply Now</a></li>
-            <li><a href="https://legendarystaffingllc.github.io/legendary-staffing/talent.html">Talent</a></li>
-            <li><a href="https://legendarystaffingllc.github.io/legendary-staffing/admin.html">Admin</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="request.html">Hire Us</a></li>
+                <li><a href="apply.html">Join Team</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="apply-section">
-        <div class="application-card">
-            <div class="section-title">
-                <h2>Submit Your Talent Profile</h2>
-                <p style="font-size: 0.9rem; color: #888;">Complete your talent profile below</p>
+    <div class="card">
+        <h2 style="color:#c5a059; text-align:center; text-transform: uppercase;">Talent Application</h2>
+        <form>
+            <div style="display:flex; gap:15px;">
+                <div class="field-box" style="flex:1;"><label>Full Name</label><input type="text" required></div>
+                <div class="field-box" style="flex:1;"><label>Phone</label><input type="tel"></div>
             </div>
-
-            <form>
-                <div class="grid">
-                    <div class="field-box">
-                        <label>Full Name</label>
-                        <input type="text" required>
-                    </div>
-                    <div class="field-box">
-                        <label>Phone Number</label>
-                        <input type="tel" required>
-                    </div>
-                </div>
-
-                <div class="field-box">
-                    <label>Email Address</label>
-                    <input type="email" required>
-                </div>
-
-                <div class="field-box">
-                    <label>Quick Bio</label>
-                    <textarea rows="2" placeholder="Tell us about you..."></textarea>
-                </div>
-
-                <div class="field-box">
-                    <label>Experience (Professional & Gig Work)</label>
-                    <textarea rows="4" placeholder="List your professional, convention, brand ambassador, or event staff experience..."></textarea>
-                </div>
-
-                <div class="grid">
-                    <div class="field-box">
-                        <label>Upload a Headshot</label>
-                        <input type="file" accept="image/*">
-                    </div>
-                    <div class="field-box">
-                        <label>Schedule Limitations (if any)</label>
-                        <input type="text" placeholder="e.g. Weekends only">
-                    </div>
-                </div>
-
-                <button type="submit" class="submit-btn">Send Application</button>
-            </form>
-        </div>
-    </section>
+            <div class="field-box"><label>Quick Bio</label><textarea rows="4"placeholder="Tell us about you..."></textarea></div>
+            <div class="field-box"><label>Experience</label><textarea rows="4"placeholder="List your professional, convention, brand ambassador, or event staff experience......"></textarea></div>
+            <div style="display:flex; gap:15px;">
+                <div class="field-box" style="flex:1;"><label>Headshot</label><input type="file" style="border:none;"></div>
+                <div class="field-box" style="flex:1;"><label>Limitations</label><input type="text"placeholder="e.g. Weekends only"></div>
+            </div>
+            <button class="submit-btn">Send Application</button>
+        </form>
+    </div>
 </body>
 </html>
-
-
-
