@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legendary Staffing | Las Vegas Premier Event Talent</title>
+    <style>
+        body { margin: 0; background-color: #1a1a1a; color: #f4f4f4; font-family: 'Segoe UI', Arial, sans-serif; scroll-behavior: smooth; }
+        header { position: fixed; top: 0; width: 100%; background: #1a1a1a; border-bottom: 1px solid #c5a059; z-index: 1000; padding: 15px 0; }
+        nav { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0 5%; }
+        .logo { font-weight: bold; letter-spacing: 3px; color: #c5a059; text-decoration: none; }
+        nav ul { list-style: none; display: flex; margin: 0; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { color: white; text-decoration: none; text-transform: uppercase; font-size: 0.8rem; }
+        
+        /* New Layout Sections */
+        .container { max-width: 1100px; margin: auto; padding: 80px 5%; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 2.5rem; text-transform: uppercase; letter-spacing: 4px; color: #c5a059; margin: 0; }
+        .section-title p { font-style: italic; color: #888; }
+
+        /* Feature Grid (Expertise) */
+        .expertise-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .expertise-item { background: #222; padding: 30px; border-left: 3px solid #c5a059; }
+        .expertise-item h3 { color: #c5a059; text-transform: uppercase; margin-top: 0; }
+
+        /* Venue Section */
+        .venue-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px; }
+        .venue-badge { border: 1px solid #444; padding: 10px 20px; border-radius: 50px; font-size: 0.8rem; color: #c5a059; text-transform: uppercase; }
+
+        /* General Styling */
+        .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1920x1080/111/c5a059?text=Vegas+Convention+Hall'); background-size: cover; }
+        .btn-gold { background: #c5a059; color: black; padding: 15px 35px; text-decoration: none; font-weight: bold; margin: 10px; display: inline-block; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">LEGENDARY STAFFING</a>
+            <ul>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#venues">Venues</a></li>
+                <li><a href="request.html">Hire Us</a></li>
+                <li><a href="apply.html">Join Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>LEGENDARY <span style="color: #c5a059;">SERVICE</span></h1>
+        <p>Expert Front-of-House Solutions for the World's Biggest Stages</p>
+        <a href="request.html" class="btn-gold">Request a Quote</a>
+    </section>
+
+    <div id="expertise" class="container">
+        <div class="section-title">
+            <h2>Our Expertise</h2>
+            <p>Specialized staffing for every facet of the Las Vegas event industry</p>
+        </div>
+        <div class="expertise-grid">
+            <div class="expertise-item">
+                <h3>Brand Ambassadors</h3>
+                <p>Engaging, professional representatives trained to embody your brand identity and drive booth traffic.</p>
+            </div>
+            <div class="expertise-item">
+                <h3>Lead Generation</h3>
+                <p>High-energy teams focused on gathering data, scanning badges, and qualifying convention leads.</p>
+            </div>
+            <div class="expertise-item">
+                <h3>VIP Hospitality</h3>
+                <p>Polished greeters and hosts for executive suites, private lounges, and high-end gala events.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="venues" class="container" style="background-color: #333; max-width: 100%;">
+        <div class="section-title">
+            <h2 style="padding-top: 40px;">Venue Mastery</h2>
+            <p>We are "boots on the ground" in every major Las Vegas hub</p>
+        </div>
+        <div class="venue-list" style="padding-bottom: 60px;">
+            <div class="venue-badge">The Venetian Expo</div>
+            <div class="venue-badge">Las Vegas Convention Center (LVCC)</div>
+            <div class="venue-badge">Mandalay Bay Convention Center</div>
+            <div class="venue-badge">Caesars Forum</div>
+            <div class="venue-badge">Resorts World Las Vegas</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <h2 style="color: #c5a059; text-transform: uppercase;">The Legendary Standard</h2>
+                <p>We don't just "fill spots." Every ambassador on our roster undergoes a rigorous vetting process and specific venue orientation.</p>
+                <ul style="color: #888; line-height: 2;">
+                    <li>✓ 100% On-Time Reliability Guarantee</li>
+                    <li>✓ Uniform & Grooming Compliance Checks</li>
+                    <li>✓ Prior Experience in Multi-Day Trade Shows</li>
+                </ul>
+            </div>
+            <div style="flex: 1; min-width: 300px;">
+                <img src="https://via.placeholder.com/500x350/222/c5a059?text=Professional+Staff+Photo" alt="Our Team" style="width: 100%; border: 1px solid #c5a059;">
+            </div>
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 40px; border-top: 1px solid #444;">
+        <p style="font-size: 0.8rem; color: #666;">&copy; 2026 Legendary Staffing | Las Vegas, NV</p>
+    </footer>
+</body>
+</html>
