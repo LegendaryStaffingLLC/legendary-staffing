@@ -33,13 +33,26 @@
         </nav>
     </header>
 
-    <div class="card">
-        <h2 style="color:#c5a059; text-align:center; text-transform: uppercase;">Talent Application</h2>
-        <form>
-            <div style="display:flex; gap:15px;">
-                <div class="field-box" style="flex:1;"><label>Full Name</label><input type="text" required></div>
-                <div class="field-box" style="flex:1;"><label>Phone</label><input type="tel"></div>
-                          <div class="field-box">
+    <section id="apply-section">
+        <div class="application-card">
+            <div class="section-title">
+                <h2>Submit Your Talent Profile</h2>
+                <p style="font-size: 0.9rem; color: #888;">Complete your talent profile below</p>
+            </div>
+
+            <form>
+                <div class="grid">
+                    <div class="field-box">
+                        <label>Full Name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="field-box">
+                        <label>Phone Number</label>
+                        <input type="tel" required>
+                    </div>
+                </div>
+
+                <div class="field-box">
                     <label>Email Address</label>
                     <input type="email" required>
                 </div>
@@ -64,10 +77,13 @@
                         <input type="text" placeholder="e.g. Weekends only">
                     </div>
                 </div>
-            <button class="submit-btn">Send Application</button>
-        </form>
-    </div>
+
+                <button type="submit" class="submit-btn">Send Application</button>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
+
 
 
