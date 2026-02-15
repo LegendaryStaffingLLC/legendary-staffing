@@ -33,24 +33,49 @@
         </nav>
     </header>
 
-    <div class="card">
-        <h2 style="color:#c5a059; text-align:center; text-transform: uppercase;">Submit your Talent Profile</h2>
-         <p style="font-size: 0.9rem; color: #888;">Complete your Talent Profile below</p>
-        <form>
-            <div style="display:flex; gap:15px;">
-                <div class="field-box" style="flex:1;"><label>Full Name</label><input type="text" required></div>
-                <div class="field-box" style="flex:1;"><label>Phone Number</label><input type="tel"></div>
+<div class="card">
+    <h2 style="color:#c5a059; text-align:center; text-transform: uppercase;">Submit your Talent Profile</h2>
+    <p style="font-size: 0.9rem; color: #888; text-align:center;">Complete your Talent Profile below</p>
+    
+    <form action="https://docs.google.com/forms/d/1spePb88n8WeFuwvfTctiUG1YSy2mB-4h2M-y5XMJY_4/formResponse" method="POST" target="_hidden_iframe" onsubmit="alert('Application Sent! Thank you for applying to Legendary Staffing.');">
+        
+        <div style="display:flex; gap:15px;">
+            <div class="field-box" style="flex:1;">
+                <label>Full Name</label>
+                <input type="text" name="entry.412769201" required>
             </div>
-            <div class="field-box" style="flex:1;"><label>Email Address</label><input type="email"></div>
-            <div class="field-box"><label>Quick Information About You</label><textarea rows="4"placeholder="Tell us about you..."></textarea></div>
-            <div class="field-box"><label>Professional and Gig Work Experience</label><textarea rows="4"placeholder="List your professional, convention, brand ambassador, or event staff experience......"></textarea></div>
-            <div style="display:flex; gap:15px;">
-                <div class="field-box" style="flex:1;"><label>Headshot (OptionaL)</label><input type="file" style="border:none;"></div>
-                <div class="field-box" style="flex:1;"><label>Schedule Limitations</label><input type="text"placeholder="e.g. Weekends only"></div>
+            <div class="field-box" style="flex:1;">
+                <label>Phone Number</label>
+                <input type="tel" name="entry.671062066" required>
             </div>
-            <button class="submit-btn">Send Application</button>
-        </form>
-    </div>
+        </div>
+
+        <div class="field-box" style="flex:1;">
+            <label>Email Address</label>
+            <input type="email" name="entry.174418701" required>
+        </div>
+
+        <div class="field-box">
+            <label>Quick Information About You</label>
+            <textarea name="entry.341698056" rows="8" placeholder="Tell us about you..."></textarea>
+        </div>
+
+        <div class="field-box">
+            <label>Professional and Gig Work Experience</label>
+            <textarea name="entry.27883158" rows="8" placeholder="List your professional, convention, brand ambassador, or event staff experience..."></textarea>
+        </div>
+
+        <div class="field-box">
+            <label>Schedule Limitations</label>
+            <input type="text" name="entry.476025201" placeholder="e.g. Weekends only">
+        </div>
+
+        <button type="submit" class="submit-btn">Send Application</button>
+    </form>
+
+    <iframe name="_hidden_iframe" id="_hidden_iframe" style="display:none;"></iframe>
+</div>
 </body>
 </html>
+
 
