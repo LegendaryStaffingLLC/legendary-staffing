@@ -35,8 +35,11 @@
 
     <div class="card">
         <h2 style="color:#c5a059; text-align:center; text-transform: uppercase;">Request Services</h2>
-        <form>
-            <div class="field-box"><label>Company Name</label><input type="text" required></div>
+        <form action="https://forms.gle/GeHKkXfKgaMaQyim7" method="POST" target="_hidden_iframe">>
+            <div style="margin-bottom: 20px;">
+        <label style="color: #c5a059;">Company Name</label>
+        <input type="text" name="entry.1545316894" required style="width: 100%; background: #222; border: 1px solid #c5a059; color: white; padding: 10px;">
+         </div>
             <div class="field-box"><label>Contact Name</label><input type="text" required></div>
             <div class="field-box"><label>Phone Number</label><input type="text" required></div>
             <div class="field-box"><label>Email Address</label><input type="text" required></div>
@@ -53,9 +56,11 @@
             <div class="field-box"><label>Additional Notes or Requests</label><textarea rows="6"></textarea></div>
             <button class="submit-btn">Request Quote</button>
         </form>
+        <iframe name="_hidden_iframe" id="_hidden_iframe" style="display:none;"></iframe>
     </div>
 </body>
 </html>
+
 
 
 
