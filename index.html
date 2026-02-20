@@ -161,8 +161,29 @@
     <footer style="text-align: center; padding: 40px; border-top: 1px solid #444;">
         <p style="font-size: 0.8rem; color: #666;">&copy; 2026 Legendary Staffing | Las Vegas, NV</p>
     </footer>
+<div id="cookie-banner" style="position: fixed; bottom: 20px; left: 20px; right: 20px; background: #222; border: 1px solid #c5a059; padding: 20px; display: flex; justify-content: space-between; align-items: center; z-index: 9999; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+    <div style="font-size: 0.85rem; color: #fff; padding-right: 20px;">
+        Legendary Staffing uses cookies to ensure you get the best experience on our website. 
+        <a href="privacy.html" style="color: #c5a059; text-decoration: underline;">Learn More</a>
+    </div>
+    <button onclick="acceptCookies()" style="background: #c5a059; color: black; border: none; padding: 10px 25px; font-weight: bold; cursor: pointer; text-transform: uppercase; white-space: nowrap;">Accept</button>
+</div>
+
+<script>
+    function acceptCookies() {
+        document.getElementById('cookie-banner').style.display = 'none';
+        // Optional: Save preference in local storage so it doesn't pop up every time
+        localStorage.setItem('legendary_cookies_accepted', 'true');
+    }
+
+    // Check if they already accepted
+    if (localStorage.getItem('legendary_cookies_accepted') === 'true') {
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+</script>
 </body>
 </html>
+
 
 
 
