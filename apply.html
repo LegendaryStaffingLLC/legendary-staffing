@@ -27,6 +27,29 @@
         label { color: #c5a059; font-size: 0.7rem; text-transform: uppercase; display: block; margin-bottom: 5px; }
         input, textarea { width: 100%; background: transparent; border: none; border-bottom: 1px solid #555; color: white; padding: 8px 0; outline: none; }
         .submit-btn { width: 100%; padding: 15px; background: #c5a059; color: black; border: none; font-weight: bold; cursor: pointer; text-transform: uppercase; }
+        /* Mobile Navigation Fix */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column; /* Stacks Logo and Menu */
+        padding: 10px 0;
+    }
+
+    nav ul {
+        padding: 0;
+        margin-top: 15px;
+        flex-wrap: wrap; /* Allows links to move to a new line */
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 10px; /* Adjusts spacing for smaller screens */
+    }
+    
+    /* Adjusts hero text so it doesn't overlap header */
+    body {
+        padding-top: 120px; 
+    }
+}
     </style>
 </head>
 <body>
@@ -112,6 +135,7 @@
 </script>
 </body>
 </html>
+
 
 
 
