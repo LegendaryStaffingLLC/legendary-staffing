@@ -51,6 +51,30 @@
         /* General Styling */
         .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1920x1080/111/c5a059?text=Vegas+Convention+Hall'); background-size: cover; }
         .btn-gold { background: #c5a059; color: black; padding: 15px 35px; text-decoration: none; font-weight: bold; margin: 10px; display: inline-block; text-transform: uppercase; }
+
+        /* Mobile Navigation Fix */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column; /* Stacks Logo and Menu */
+        padding: 10px 0;
+    }
+
+    nav ul {
+        padding: 0;
+        margin-top: 15px;
+        flex-wrap: wrap; /* Allows links to move to a new line */
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 10px; /* Adjusts spacing for smaller screens */
+    }
+    
+    /* Adjusts hero text so it doesn't overlap header */
+    body {
+        padding-top: 120px; 
+    }
+}
     </style>
 </head>
 <body>
@@ -243,3 +267,4 @@
 </script>
 </body>
 </html>
+
