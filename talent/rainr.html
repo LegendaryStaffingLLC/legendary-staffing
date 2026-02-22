@@ -11,6 +11,13 @@
         .logo { font-weight: bold; letter-spacing: 3px; color: #c5a059; text-decoration: none; }
         
         .profile-container { max-width: 1100px; margin: 40px auto; padding: 0 5%; display: grid; grid-template-columns: 1fr 2fr; gap: 40px; }
+        
+        /* Mobile adjustment for grid */
+        @media (max-width: 768px) {
+            .profile-container { grid-template-columns: 1fr; }
+            body { padding-top: 100px; }
+        }
+
         .sidebar { display: flex; flex-direction: column; gap: 20px; }
         .info-box { background: #222; border: 1px solid #c5a059; padding: 30px; text-align: center; }
         .headshot { width: 100%; height: auto; border: 2px solid #c5a059; margin-bottom: 20px; }
@@ -24,27 +31,37 @@
         .stat-label { color: #c5a059; font-size: 0.7rem; text-transform: uppercase; }
         .stat-value { font-size: 1.1rem; }
 
-        /* Gallery Styling - Reverted to 2 Columns with larger previews */
+        /* Gallery Styling */
         .gallery-box { background: #222; border: 1px solid #c5a059; padding: 25px; }
         .gallery-title { color: #c5a059; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; border-bottom: 1px solid #333; padding-bottom: 5px; }
         .gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
-        .gallery-item { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border: 1px solid #444; cursor: pointer; transition: transform 0.2s ease; outline: none; }
-        .gallery-item:hover { border-color: #c5a059; transform: scale(1.02); }
+        
+        .gallery-item { 
+            width: 100%; 
+            aspect-ratio: 1 / 1; 
+            object-fit: cover; 
+            border: 1px solid #444; 
+            cursor: pointer; 
+            transition: border-color 0.3s ease; 
+            outline: none; 
+        }
+        .gallery-item:hover { border-color: #c5a059; }
 
-        /* Fixed Popout Logic */
-        .gallery-item:active { 
+        /* Improved Tap-to-Enlarge Logic (Mobile Friendly) */
+        .gallery-item:focus { 
             position: fixed; 
             top: 50%; 
             left: 50%; 
             transform: translate(-50%, -50%); 
             width: auto;
             height: auto;
-            max-width: 90vw; 
-            max-height: 85vh; 
+            max-width: 95vw; 
+            max-height: 80vh; 
             z-index: 3000; 
             border: 3px solid #c5a059; 
-            box-shadow: 0 0 100px rgba(0,0,0,0.9); 
+            box-shadow: 0 0 0 1000px rgba(0,0,0,0.85); /* Creates a dark backdrop */
             object-fit: contain;
+            cursor: zoom-out;
         }
 
         /* Table Styling */
@@ -87,15 +104,15 @@
                 <div class="gallery-title">Portfolio Gallery</div>
                 <div class="gallery-grid">
                     <img src="../talent/images/rainr/rain-headshot.jpg" alt="Gallery 1" class="gallery-item" tabindex="0">
-                    <img src="../talent/images/rainr/rain-1.jpg" alt="Gallery 2" class="gallery-item" tabindex="0">
-                    <img src="../talent/images/rainr/rain-2.jpg" alt="Gallery 3" class="gallery-item" tabindex="0">
-                    <img src="../talent/images/rainr/rain-3.jpg" alt="Gallery 4" class="gallery-item" tabindex="0">
-                    <img src="../talent/images/rainr/rain-4.jpg" alt="Gallery 5" class="gallery-item" tabindex="0">
-                    <img src="../talent/images/rainr/rain-5.jpg" alt="Gallery 6" class="gallery-item" tabindex="0">
-                    <img src="../talent/images/rainr/rain-6.jpg" alt="Gallery 7" class="gallery-item" tabindex="0">
-                    <img src="../talent/images/rainr/rain-7.jpg" alt="Gallery 8" class="gallery-item" tabindex="0">
+                    <img src="../talent/images/rainr/rain-1.jpg" alt="Gallery 2" class="gallery-item" tabindex="1">
+                    <img src="../talent/images/rainr/rain-2.jpg" alt="Gallery 3" class="gallery-item" tabindex="2">
+                    <img src="../talent/images/rainr/rain-3.jpg" alt="Gallery 4" class="gallery-item" tabindex="3">
+                    <img src="../talent/images/rainr/rain-4.jpg" alt="Gallery 5" class="gallery-item" tabindex="4">
+                    <img src="../talent/images/rainr/rain-5.jpg" alt="Gallery 6" class="gallery-item" tabindex="5">
+                    <img src="../talent/images/rainr/rain-6.jpg" alt="Gallery 7" class="gallery-item" tabindex="6">
+                    <img src="../talent/images/rainr/rain-7.jpg" alt="Gallery 8" class="gallery-item" tabindex="7">
                 </div>
-                <p style="font-size: 0.6rem; color: #666; margin-top: 15px; text-align: center;">Click and hold to enlarge</p>
+                <p style="font-size: 0.65rem; color: #c5a059; margin-top: 15px; text-align: center; text-transform: uppercase; letter-spacing: 1px;">Tap to Enlarge / Tap Away to Close</p>
             </div>
         </aside>
 
