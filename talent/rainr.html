@@ -24,15 +24,28 @@
         .stat-label { color: #c5a059; font-size: 0.7rem; text-transform: uppercase; }
         .stat-value { font-size: 1.1rem; }
 
-        /* Gallery Styling */
-        .gallery-box { background: #222; border: 1px solid #c5a059; padding: 20px; }
+        /* Gallery Styling - Reverted to 2 Columns with larger previews */
+        .gallery-box { background: #222; border: 1px solid #c5a059; padding: 25px; }
         .gallery-title { color: #c5a059; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; border-bottom: 1px solid #333; padding-bottom: 5px; }
-        .gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
-        .gallery-item { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border: 1px solid #444; cursor: pointer; transition: transform 0.3s ease; }
-        .gallery-item:hover { transform: scale(1.05); border-color: #c5a059; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+        .gallery-item { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border: 1px solid #444; cursor: pointer; transition: transform 0.2s ease; outline: none; }
+        .gallery-item:hover { border-color: #c5a059; transform: scale(1.02); }
 
-        /* Simple Popout (Modal) Effect */
-        .gallery-item:active { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(2.5); z-index: 2000; border: 2px solid #c5a059; box-shadow: 0 0 50px rgba(0,0,0,0.9); }
+        /* Fixed Popout Logic */
+        .gallery-item:active { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: auto;
+            height: auto;
+            max-width: 90vw; 
+            max-height: 85vh; 
+            z-index: 3000; 
+            border: 3px solid #c5a059; 
+            box-shadow: 0 0 100px rgba(0,0,0,0.9); 
+            object-fit: contain;
+        }
 
         /* Table Styling */
         .work-table { width: 100%; border-collapse: collapse; margin-top: 20px; color: #ccc; font-size: 0.9rem; }
@@ -63,8 +76,8 @@
                 <div class="badge">Sheriff's Card</div>
                 
                 <div class="stats-grid">
-                    <div class="stat-item"><div class="stat-label">Height</div><div class="stat-value">5'x"</div></div>
-                    <div class="stat-item"><div class="stat-label">Location</div><div class="stat-value">Las Vegas (Open to Travel)</div></div>
+                    <div class="stat-item"><div class="stat-label">Height</div><div class="stat-value">5'7"</div></div>
+                    <div class="stat-item"><div class="stat-label">Location</div><div class="stat-value">Las Vegas</div></div>
                     <div class="stat-item"><div class="stat-label">Languages</div><div class="stat-value">English</div></div>
                     <div class="stat-item"><div class="stat-label">Scheduling</div><div class="stat-value">Open</div></div>
                 </div>
@@ -84,14 +97,14 @@
                     <img src="../talent/images/rainr/rain-9.jpg" alt="Gallery 9" class="gallery-item" tabindex="0">
                     <img src="../talent/images/rainr/rain-10.jpg" alt="Gallery 10" class="gallery-item" tabindex="0">
                 </div>
-                <p style="font-size: 0.6rem; color: #666; margin-top: 10px; text-align: center;">Click and hold to enlarge</p>
+                <p style="font-size: 0.6rem; color: #666; margin-top: 15px; text-align: center;">Click and hold to enlarge</p>
             </div>
         </aside>
 
         <main>
             <h3 style="color: #c5a059; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px;">Professional Introduction</h3>
             <p style="line-height: 1.8; color: #ccc; margin-bottom: 25px;">
-                Rain is a high-energy, seasoned event professional and <strong>Team Lead</strong> with an extensive track record in the Las Vegas market. With a background spanning <strong>Sales (Capital One and American Express)</strong> and luxury hospitality, Rain brings a sophisticated "customer-first" approach to every activation.<br><br>
+                Rain is a high-energy, seasoned event professional and <strong>Team Lead</strong> with an extensive track record in the Las Vegas market. With a background spanning <strong>Sales (Capital One and American Express)</strong> and VIP luxury hospitality, Rain brings a sophisticated "customer-first" approach to every activation.<br><br>
                 Specializing in high-traffic trade shows and premium brand experiences, Rain has become a go-to lead for <strong>Tier-1 global brands</strong>, consistently delivering excellence at major events like <strong>F1, CES, and SEMA</strong>.
             </p>
 
