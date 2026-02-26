@@ -29,6 +29,25 @@
         .stat-label { color: #c5a059; font-size: 0.7rem; text-transform: uppercase; }
         .stat-value { font-size: 1.1rem; }
 
+        /* Video Box Styling - THIS WAS THE MISSING PART */
+        .video-box { 
+            background: #000; 
+            border: 1px solid #444; 
+            margin-top: 20px; 
+            position: relative; 
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0; 
+            overflow: hidden; 
+        }
+        .video-box iframe { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            border: none; 
+        }
+
         .gallery-box { background: #222; border: 1px solid #c5a059; padding: 25px; }
         .gallery-title { color: #c5a059; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; border-bottom: 1px solid #333; padding-bottom: 5px; }
         .gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
@@ -88,7 +107,7 @@
                 
                 <div class="stats-grid">
                     <div class="stat-item"><div class="stat-label">Height</div><div class="stat-value">6'0"</div></div>
-                    <div class="stat-item"><div class="stat-label">Location</div><div class="stat-value">Las Vegas (Open to Travel)</div></div>
+                    <div class="stat-item"><div class="stat-label">Location</div><div class="stat-value">Las Vegas, NV</div></div>
                     <div class="stat-item"><div class="stat-label">Languages</div><div class="stat-value">English</div></div>
                     <div class="stat-item"><div class="stat-label">Scheduling</div><div class="stat-value">Open</div></div>
                 </div>
@@ -133,7 +152,7 @@
                 </tbody>
             </table>
 
-             <h3 style="color: #c5a059; text-transform: uppercase; letter-spacing: 2px; margin-top: 40px;">Recorded Interview</h3>
+            <h3 style="color: #c5a059; text-transform: uppercase; letter-spacing: 2px; margin-top: 40px;">Recorded Interview</h3>
             <div class="video-box">
                 <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video player" allowfullscreen></iframe>
             </div>
